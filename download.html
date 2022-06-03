@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <title>DOWNLOAD TWRP RECOVERY</title>
+	 <meta charset="UTF-8">
+	 <link rel="stylesheet" href="style.css">
+	 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="logo"><img src="logo.png"></div>
+    <div id="menu"><i class="fas fa-bars"></i></div>
+    <div id="sidebar">
+        <a href="#"><i  class="fa-brands fa-facebook-messenger"></i></a>
+		<a href="https://t.me/mastersenpai05"><i  class="fa-brands fa-telegram"></i></a>
+		<a href="tel:+639274443069"><i  class="fa-brands fa-whatsapp"></i></a>
+		<a href="#"><i class="fa-brands fa-facebook"></i></a>
+		<div onlick="sidebarClose()" id="closemenu"><i class="fa fa-times"></i></div>
+        <ul>
+            <li><a href="#"><i  class="fa fa-home"></i>Home</a></li>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p>UNKNOWN DEVICES v1.0</p>
+    </div>
+    <div class="h">
+    	<img src="twrp.png" width="100%">
+   </div>
+   
+   <div id="intro">
+   	<h1>WHAT IS UNOFFICIAL TWRP?</h1>
+     <p><strong>UNOFFICIAL TWRP</strong><br> is not included in the official website ofcourse 😅. Yes unofficial twrp - when you create TWRP it is unofficial, it will be official when you apply to the TWRP team itself. once your application is approved, your TWRP will be official. and will be published on their website. what are the requirements for your TWRP to be official?<br><br>Basic Requirements example <br>1. You have your own Device.<br>2. Basic stuff like flashing, back up & restore.<br>3. Will be decrypted can access internal storage. <br>4. You can Fix bug. <br>etc.<br>@mastersenpai05 build TWRP for people who are lazy to create and just want the easy free software. Here it is Download now 🤣✌️.</p>
+   </div>
+   
+   
+   <h2>DOWNLOAD HERE</h2>
+   
+   <div class="device-name">
+       <button class="dropdwn-items">Xiaomi</button>
+       <div class="list2">
+               <a href="#">Poco X3 GT</a>
+               <a href="#">Poco F3 GT</a>
+               <a href="#">Poco M3</a>
+               <a href="#">Redmi 9a</a>
+       </div>
+   </div>
+       <div class="device-name">
+           <button class="dropdwn-items">Infinix</button>
+           <div class="list2">
+               <a href="#">Infinix Note 8i</a>
+               <a href="#">Infinix Hot 10s</a>
+               <a href="#">Infinic Note 7</a>
+       </div>
+   </div>
+   <div class="device-name">
+       <button class="dropdwn-items">Tecno Devices</button>
+       <div class="list2">
+           <a href="#">Tecno Pova</a>
+           <a href="#">Tecno Pova 2</a>
+           <a href="#">Tecno Spark 5 Pro</a>
+           <a href="#">Tecno CE7</a>
+       </div>
+   </div>
+   <div class="device-name">
+       <button class="dropdwn-items">Micromax Devices</button>
+       <div class="list2">
+           <a href="#">Micromax In Note 1</a>
+           <a href="#">Micromax In 1</a>
+           <a href="#">Micromax In </a>
+      </div>
+   </div>
+   
+   <button class="btn"><a href="#flash">HOW TO FLASH &#x27A2</a></button>
+   
+   <div  class="container">
+      <h4>LEARN BUILD YOUR OWN CUSTOM RECOVERY</h4>
+      <p>In this tutorials will help you how to build your own custom recovery.<br>Learn More👇</p>
+           <button class="btn"><a href="#build">Learn More &#x27A2</a></button>
+      <div  class="yt">
+          <iframe src= "https://youtube.com/embed/bloDpu934nc"></iframe>
+          <iframe src= "https://youtube.com/embed/KBN5OBRe61A"></iframe>
+      </div>
+   </div>
+   
+   <section>  
+       <div id="build">
+           <h1>HOW TO BUILD YOUR OWN RECOVERY</h1>
+           <h3>Requirements</h3>
+           
+           <ol>
+               <li>PC with Linux Distro at least 16gb ram</li>
+               <li>Device Tree</li>
+               <li>Brain</li>
+           </ol>
+           
+           <div class="build1">
+               <h3>Setup build environment</h3>
+               <code><strong>pkg install git && git clone http://github.com/akhilnarang/scripts tools && bash tools/setup/android_build_env.sh</strong></code>
+           </div>
+           <div class="build1">
+               <h3>Create Folder</h3>
+               <code><strong>mkdir foldernamecd foldername</strong></code>
+           </div>
+           <div class="build1">
+               <h3>Cloning TWRP manifest</h3>
+               <p>To initialize a shallow clone, which will save even more space, use a command like this: check manifest twrp for your device<br>https://github.com/minimal-manifest-twrp</p>
+               
+               <code><strong>repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-10.0-deprecated</strong></code>
+           </div>
+           <div class="build1">
+               <h3>Syncing TWRP source</h3>
+               <code><strong>repo sync</strong></code>
+           </div>
+           <div class="build1">
+               <h3>CLoning your device tree</h3>
+               <p>Let's clone our device tree in foldername/device/brand/devicecodename 👇</p>
+               <code><strong>git clone devicetreegithublink device/xiaomi/chopin</strong></code>
+           </div>
+           <div class="build1">
+               <h3>Let's start building</h3>
+               <code><strong>. build/envsetup.sh && export ALLOW_MISSING_DEPENDENCIES=true && lunch omni_devicecodename-eng</strong></code>
+           </div>
+       </div>
+       <button class="btn"><a href="#">LEARN BUILD WITHOUT PC &#x27A2</a></button>
+       
+       <div id="flash" class="build">
+           <h1>HOW TO FLASH SENPAI TWRP</h1>
+           <h3>Requirements</h3>
+           <ol>
+               <a href="#"><li>ADB and Fastboot Driver Installed</li></a>
+               <a href="#"><li>Platform tool</li></a>
+               <li>Unlocked bootloader</li>
+           </ol>
+           <div class="flash">
+           <h3>MEDIATEK DEVICES</h3>
+           <p>Make sure usb debugging is enabled</p>
+           <code><strong>adb devices <br>adb reboot bootloader<br>fastboot devices<br>fastboot --disable-verification flash vbmeta vbmeta.img<br>fastboot flash recovery recovery.img</strong></code>
+           </div>
+           <div class="flash">
+           <h3>SNAPDRAGON DEVICES</h3>
+           <p>Make sure usb debugging is enabled</p>
+           <code><strong>adb devices <br>adb reboot bootloader<br>fastboot devices<br>fastboot flash recovery recovery.img</strong></code>
+           </div>
+           <div class="flash">
+           <h3>VIRTUAL A/B MEDIATEK DEVICES</h3>
+           <ol>
+               <li>Poco F3 GT</li>
+               <li>Poco X3 GT</li>
+           </ol>
+           <p>this is for only above devices with V A/B<br> Make sure usb debugging is enabled</p>
+           <code><strong>adb devices <br>adb reboot bootloader<br>fastboot devices<br>fastboot flash boot twrpname.img</strong></code>
+           </div>
+           <button class="btn"><a href="#">Learn more about V A/B device</a></button>
+       </div>
+   </section>
+   
+   <div id="contact">
+		<a href="#"><i  class="fa-brands fa-facebook-messenger"></i></a>
+		<a href="https://t.me/mastersenpai05"><i  class="fa-brands fa-telegram"></i></a>
+		<a href="tel:+639274443069"><i  class="fa-brands fa-whatsapp"></i></a>
+		<a href="#"><i class="fa-brands fa-facebook"></i></a>
+   </div>
+   <div  class="footer">
+		<div  class="credits">
+			<h4>Credits</h4>
+			<a href="#">TeamWin</a>
+			<a href="#">SHRP</a>
+			<a href="#">Orangezfox</a>
+			<a href="#">PBRP</a>
+			<a href="#">GitHub</a>
+		</div>
+		<h4>© Copyright 2022 Alright Reserved<br>unknown devices</h4>
+	</div>
+
+    
+    <script>
+        const menu = document.getElementById('menu');
+        const closemenu = document.getElementById('closemenu');
+        
+        menu.onclick = function(){
+            document.getElementById('sidebar').style.width = "300px";
+            document.getElementById('menu').style.display = "none";
+        }
+        
+        closemenu.onclick = function (){
+            document.getElementById('sidebar').style.width = "0";
+            document.getElementById('menu').style.display = "block";
+        }
+        
+    </script>
+
+</body>
+</html>

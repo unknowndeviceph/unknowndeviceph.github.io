@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <title>DOWNLOAD TWRP RECOVERY</title>
+	 <meta charset="UTF-8">
+	 <link rel="stylesheet" href="../style.css">
+	 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="logo"><img src="../logo.png"></div>
+    <div id="menu"><i class="fas fa-bars"></i></div>
+    <div id="sidebar">
+        <a href="#"><i  class="fa-brands fa-facebook-messenger"></i></a>
+		<a href="https://t.me/mastersenpai05"><i  class="fa-brands fa-telegram"></i></a>
+		<a href="tel:+639274443069"><i  class="fa-brands fa-whatsapp"></i></a>
+		<a href="#"><i class="fa-brands fa-facebook"></i></a>
+		<div onlick="sidebarClose()" id="closemenu"><i class="fa fa-times"></i></div>
+        <ul>
+            <li><a href="#"><i  class="fa fa-home"></i>Home</a></li>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p>UNKNOWN DEVICES v1.0</p>
+    </div>
+   
+   <script>
+        const menu = document.getElementById('menu');
+        const closemenu = document.getElementById('closemenu');
+        
+        menu.onclick = function(){
+            document.getElementById('sidebar').style.width = "300px";
+            document.getElementById('menu').style.display = "none";
+        }
+        
+        closemenu.onclick = function (){
+            document.getElementById('sidebar').style.width = "0";
+            document.getElementById('menu').style.display = "block";
+        }
+        
+    </script>
+
+</body>
+</html>

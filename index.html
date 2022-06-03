@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <title>Unknown Devices</title>
+	 <meta charset="UTF-8"/>
+	 <link rel="stylesheet" href="style.css">
+	 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="logo"><img src="logo.png"></div>
+    <div onclick="toggleMenu()" id="menu"><i class="fas fa-bars"></i></div>
+    <div id="sidebar">
+        <a href="#"><i  class="fa-brands fa-facebook-messenger"></i></a>
+		<a href="https://t.me/mastersenpai05"><i  class="fa-brands fa-telegram"></i></a>
+		<a href="tel:+639274443069"><i  class="fa-brands fa-whatsapp"></i></a>
+		<a href="#"><i class="fa-brands fa-facebook"></i></a>
+		<div id="closemenu"><i class="fa fa-times"></i></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p>UNKNOWN DEVICES v1.0</p>
+    </div>
+    <div class="h">
+    	<img src="img/utwrp.jpg" width="100%">
+   </div>
+   
+   <div  id="welcome">
+   	<h1>WELCOME TO UNKNOWN DEVICE</h1>
+   	<p>WE BUILD UNOFFICIAL CUSTOM RECOVERY FOR YOUR MEDIATEK  DEVICE LIKE<strong><br> ORANGEFOX RECOVERY,TWRP RECOVERY, SHRP RECOVERY, PBRP RECOVERY.</strong><br>ALL CUSTOM RECOVERY HERE ARE TESTED BY THE PERSON WHO REQUESTED IT AND WE DON'T RELEASE IT IF NOT TESTED YET, YOU CAN CHECK IN TESTING RELEASE PAGE FOR MORE INFO.</p>
+   	<button class="btn"><a href="#">Learn More &#x27A2</a></button>
+   </div>
+   
+   <div class="img">
+       <img src="img/twrp.jpg">
+       <img src= "img/recovery.jpg">
+   </div>
+   
+   <div id="intro">
+       <h1>WANT TO LEARN TO BUILD CUSTOM RECOVERY?</h1>
+       <p>“ I am always ready to learn although I do not always like being taught.” – Winston Churchill.</p>
+       <button class="btn"><a href="blog.html">HOW TO BUILD?</a></button>
+   </div>
+   
+   <h2>YOUR DEVICE IS HERE? CHECK IN DOWNLOAD PAGE</h2>
+   
+   <button class="btn"><a href="download.html">DOWNLOAD HERE &#x27A2</a></button>
+   
+   <div class="list">
+       <h3>unknown device supported devices list</h3>
+       <ol>
+           <li>Xiaomi Mediatek Devices</li>
+           <li>Infinix devices</li>
+           <li>Tecno Devices</li>
+           <li>Micromax mediatek devices</li>
+           <li>etc.</li>
+       </ol>
+   </div>
+   
+   <div class="list">
+       <h3>It's More Fun in Mediatek devices</h3>
+       <ol>
+           <li><a href="#">Learn how to root your mediatek device</a></li>
+           <li><a href="#">Learn how to unbrick your devices</a></li>
+           <li><a href="#">Best magisk module for your device</a></li>
+           <li><a href="#">How to flash GSI in Mediatek device</a></li>
+       </ol>
+   </div>
+
+   <div id="contact" class="contact">
+       <a href="#"><i  class="fa-brands fa-facebook-messenger"></i></a>
+       <a href="https://t.me/mastersenpai05"><i  class="fa-brands fa-telegram"></i></a>
+       <a href="tel:+639274443069"><i  class="fa-brands fa-whatsapp"></i></a>
+       <a href="https://www.facebook.com/unknowndeviceph/"><i  class="fa-brands fa-facebook"></i></a>
+   </div>
+		
+   <div  class="footer">
+       <div  class="credits">
+           <h4>Credits</h4>
+           <a href="#">TeamWin</a>
+           <a href="https://skyhawkrecovery.github.io">SHRP</a>
+           <a href="https://https://t.me/OrangeFoxChat">Orangefox</a>
+           <a href="https://pitchblackrecovery.com">PBRP</a>
+           <a href="https://www.github.com">GitHub</a>
+       </div>
+		<h4>© Copyright 2022 Alright Reserved<br>By mastersenpai05</h4>
+   </div>
+	
+    
+   <script>
+    
+        const menu = document.getElementById('menu');
+        const closemenu = document.getElementById('closemenu');
+        
+        menu.onclick = function(){
+            document.getElementById('sidebar').style.width = "300px";
+            document.getElementById('menu').style.display = "none";
+        }
+        
+        closemenu.onclick = function (){
+            document.getElementById('sidebar').style.width = "0";
+            document.getElementById('menu').style.display = "block";
+        }
+        
+   </script>
+
+
+</body>
+ </html>
